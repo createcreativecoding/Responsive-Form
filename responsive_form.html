@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Register
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="responsive_form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+       <div class="container-fluid">
+          <form  target="_blank"  method="POST" autocomplete="off">
+            <!--This is heading-->
+            <h1>Basic Information</h1>
+           <!--This is Firstname-->
+            <div class="row">
+              <div class="col_1 col-3">
+              <label for="fname">First name:</label>
+              </div>
+            <div class="col_2 col-9">
+            <input type="text" id="fname" name="fname"><br>
+            </div>
+      </div>
+        <!--This is Lastname-->
+    <div class="row">
+        <div class="col_1 col-3">
+          <label for="lname">Last name:</label>
+        </div>
+      <div class="col_2 col-9">
+        <input type="text" id="lname" name="lname"><br>
+    </div>
+    </div>
+           <!--This is Phone number-->
+           <div class="row">
+            <div class="col_1 col-3">
+              <label for="phone">Phone:</label>
+            </div>
+          <div class="col_2 col-9">
+            <input type="tel" id="phone" name="phone" placeholder="0123456789" pattern="[0-9]{10}"><br>
+        </div>
+        </div>
+           <!--This is Email id-->
+           <div class="row">
+          <div class="col_1 col-3">
+           <label for="email">Email:</label>
+           </div>
+           <div class="col_2 col-9">
+               <input type="email" id="email" name="email" placeholder="your_id@email.com"><br>
+               </div>
+               </div>
+           <!--This is Password-->
+           <div class="row">
+          <div class="col_1 col-3">
+            <label for="pwd">Password:</label>
+          </div>
+        <div class="col_2 col-9">
+          <input type="password" id="pwd" name="pwd"><br>
+        </div>
+        </div>
+        <!--Gender-->
+        <div class="row">
+          <div class="col_1 col-3">
+          <label for="gender">Gender:</label>
+          </div>
+          <div class="col_2 col-9">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+             <label for="female">Female</label>
+             <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+          </div>
+        </div>
+        <!--Nationality-->
+        <div class="row">
+          <div class="col_1 col-3">
+          <label for="nationality">Nationality:</label>
+        </div>
+        <div class="col_2 col-9">
+          <select name="nationality" id="nationality">
+            <option value="Indian">Indian</option>
+            <option value="Others">Others</option>
+           </select><br>
+          </div>
+        </div>
+        <!--Religion-->
+        <div class="row">
+          <div class="col_1 col-3">
+        <label for="Religion">Religion:</label>
+        </div>
+        <div class="col_2 col-9">
+        <select name="Religion" id="Religion">
+          <option value="Hindu">Hindu</option>
+          <option value="Muslim">Muslim</option>
+          <option value="Sikh">Sikh</option>
+          <option value="Christian">Christian</option>
+          <option value="Jain">Jain</option>
+          <option value="Budhhist">Budhhist</option>
+          <option value="Others">Others</option>
+        </select><br>
+        </div>
+        </div>
+        <!--Address-->
+        <div class="row">
+          <div class="col_1 col-3">
+              <label for="adrs">Address:</label>
+              </div>
+              <div class="col_2 col-9">
+                <input type="text" id="adrs" name="adrs" placeholder="Street name / locality"><br>
+                <input type="text" id="adrs" name="adrs" placeholder="PIN:123456 & District"><br>
+                <input type="text" id="adrs" name="adrs" placeholder="State"><br>
+              </div>
+              </div>
+        <!--Date of Birth-->
+        <div class="row">
+          <div class="col_1 col-3">
+        <label for="birthday">DOB:</label>
+        </div>
+        <div class="col_2 col-9">
+           <input type="date" id="birthday" name="birthday"><br>
+          </div>
+          </div><br><br>
+        <!--Uploading image files-->
+        <div class="row">
+          <div class="col_1 col-3">
+        <label for="myfile">Upload Photo:</label>
+        </div>
+        <div class="col_2 col-9">
+        <input type="file" id="myfile" name="myfile">
+        </div>
+        </div>
+        <!--Uploading signature files-->
+        <div class="row">
+          <div class="col_1 col-3">
+      <label for="myfile">Upload Signature:</label>
+      </div>
+      <div class="col_2 col-9">
+        <input type="file" id="myfile" name="myfile">
+        </div>
+        </div><br><br>
+        <!--Submit button-->
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      
+     </form>
+     </div>
+     </body>
